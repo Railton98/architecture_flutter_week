@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 import 'interfaces/local_storage_interface.dart';
 
 class AppController {
-  static final AppController instance = AppController._();
+  // ChangeThemeViewModel(storage: SharedLocalStorageService());
 
-  AppController._() {
+  final ChangeThemeViewModel changeThemeViewModel;
+
+  AppController(this.changeThemeViewModel) {
     changeThemeViewModel.init();
   }
-
-  final ChangeThemeViewModel changeThemeViewModel = ChangeThemeViewModel(storage: SharedLocalStorageService());
 
   bool get isDark => changeThemeViewModel.config.themeSwitch.value;
   ValueNotifier<bool> get themeSwitch => changeThemeViewModel.config.themeSwitch;

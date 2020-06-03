@@ -1,7 +1,7 @@
+import 'package:architecture_flutter_week/app/app_module.dart';
 import 'package:flutter/material.dart';
-
-import 'app/app_widget.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 void main() {
-  runApp(AppWidget());
+  runApp(ModularApp(module: AppModule()));
 }
