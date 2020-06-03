@@ -10,6 +10,8 @@ class ApiadvisorViewModel {
   ApiadvisorViewModel(this.repository);
 
   Future<void> fill() async {
-    apiAdvisorModel.value = await repository.getTime();
+    try {
+      apiAdvisorModel.value = await repository.getTime();
+    } catch (e) {}
   }
 }

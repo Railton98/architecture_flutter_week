@@ -31,28 +31,31 @@ class _HomePageState extends State<HomePage> {
           controller.getTime();
         },
       ),
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            CustomSwitchWidget(),
-            ValueListenableBuilder<ApiAdvisorModel>(
-              valueListenable: controller.time,
-              builder: (context, model, child) {
-                if (model?.text == null) {
-                  return Center(
-                    child: CircularProgressIndicator(),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              CustomSwitchWidget(),
+              ValueListenableBuilder<ApiAdvisorModel>(
+                valueListenable: controller.time,
+                builder: (context, model, child) {
+                  if (model?.text == null) {
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+                  return Column(
+                    children: <Widget>[
+                      Text(model.date),
+                      Text(model.country),
+                      Text(model.text),
+                    ],
                   );
-                }
-                return Column(
-                  children: <Widget>[
-                    Text(model.date),
-                    Text(model.country),
-                    Text(model.text),
-                  ],
-                );
-              },
-            ),
-          ],
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
