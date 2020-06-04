@@ -11,6 +11,8 @@ import 'app_controller.dart';
 import 'app_widget.dart';
 import 'interfaces/client_http_interface.dart';
 import 'interfaces/local_storage_interface.dart';
+import 'pages/home/home_page.dart';
+import 'pages/login/login_page.dart';
 import 'viewmodels/apiadvisor_viewmodel.dart';
 
 class AppModule extends MainModule {
@@ -29,5 +31,8 @@ class AppModule extends MainModule {
   Widget get bootstrap => AppWidget();
 
   @override
-  List<Router> get routers => null;
+  List<Router> get routers => [
+        Router('/', child: (context, args) => LoginPage()),
+        Router('/home', child: (context, args) => HomePage()),
+      ];
 }

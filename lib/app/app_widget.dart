@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'app_controller.dart';
-import 'pages/home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -17,8 +16,13 @@ class AppWidget extends StatelessWidget {
             primarySwatch: Colors.deepPurple,
             visualDensity: VisualDensity.adaptivePlatformDensity,
             brightness: isDark ? Brightness.dark : Brightness.light,
+            floatingActionButtonTheme: FloatingActionButtonThemeData(
+              foregroundColor: isDark ? Colors.black : Colors.white,
+            ),
           ),
-          home: HomePage(),
+          initialRoute: '/',
+          onGenerateRoute: Modular.generateRoute,
+          navigatorKey: Modular.navigatorKey,
         );
       },
     );
