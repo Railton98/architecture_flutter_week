@@ -1,7 +1,8 @@
 import 'package:architecture_flutter_week/app/app_module.dart';
-import 'package:architecture_flutter_week/app/interfaces/client_http_interface.dart';
-import 'package:architecture_flutter_week/app/models/apiadvisor_model.dart';
-import 'package:architecture_flutter_week/app/viewmodels/apiadvisor_viewmodel.dart';
+import 'package:architecture_flutter_week/app/core/interfaces/client_http_interface.dart';
+import 'package:architecture_flutter_week/app/modules/home/home_module.dart';
+import 'package:architecture_flutter_week/app/modules/home/models/apiadvisor_model.dart';
+import 'package:architecture_flutter_week/app/modules/home/viewmodels/apiadvisor_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
@@ -18,6 +19,8 @@ main() {
   initModule(AppModule(), changeBinds: [
     Bind<ClientHttpInterface>((i) => ClientHttpMockito()),
   ]);
+
+  initModule(HomeModule());
 
   group("ApiadvisorViewModel", () {
     test('ApiadvisorViewModel error', () async {

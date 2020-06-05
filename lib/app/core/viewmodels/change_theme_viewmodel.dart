@@ -1,5 +1,5 @@
-import 'package:architecture_flutter_week/app/interfaces/local_storage_interface.dart';
-import 'package:architecture_flutter_week/app/models/app_config_model.dart';
+import 'package:architecture_flutter_week/app/core/interfaces/local_storage_interface.dart';
+import 'package:architecture_flutter_week/app/core/models/app_config_model.dart';
 
 class ChangeThemeViewModel {
   final LocalStorageInterface storage;

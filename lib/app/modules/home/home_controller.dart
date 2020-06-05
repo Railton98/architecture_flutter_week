@@ -1,6 +1,7 @@
-import 'package:architecture_flutter_week/app/models/apiadvisor_model.dart';
-import 'package:architecture_flutter_week/app/viewmodels/apiadvisor_viewmodel.dart';
 import 'package:flutter/foundation.dart';
+
+import 'models/apiadvisor_model.dart';
+import 'viewmodels/apiadvisor_viewmodel.dart';
 
 class HomeController {
   final ApiadvisorViewModel viewModel;

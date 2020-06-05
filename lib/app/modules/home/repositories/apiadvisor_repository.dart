@@ -1,6 +1,7 @@
-import 'package:architecture_flutter_week/app/interfaces/client_http_interface.dart';
-import 'package:architecture_flutter_week/app/models/apiadvisor_model.dart';
-import 'package:architecture_flutter_week/app/repositories/apiadvisor_interface.dart';
+import 'package:architecture_flutter_week/app/core/interfaces/client_http_interface.dart';
+import 'package:architecture_flutter_week/app/modules/home/models/apiadvisor_model.dart';
+
+import 'apiadvisor_interface.dart';
 
 class ApiadvisorRepository implements ApiAdvisorInterface {
   final ClientHttpInterface client;

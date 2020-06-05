@@ -1,5 +1,5 @@
-import 'package:architecture_flutter_week/app/models/apiadvisor_model.dart';
-import 'package:architecture_flutter_week/app/repositories/apiadvisor_interface.dart';
+import 'package:architecture_flutter_week/app/modules/home/models/apiadvisor_model.dart';
+import 'package:architecture_flutter_week/app/modules/home/repositories/apiadvisor_interface.dart';
 import 'package:flutter/foundation.dart';
 
 class ApiadvisorViewModel {

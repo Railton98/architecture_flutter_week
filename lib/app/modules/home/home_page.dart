@@ -1,9 +1,9 @@
-import 'package:architecture_flutter_week/app/models/apiadvisor_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'components/custom_switch_widget.dart';
 import 'home_controller.dart';
+import 'models/apiadvisor_model.dart';
 
 class HomePage extends StatefulWidget {
   @override
