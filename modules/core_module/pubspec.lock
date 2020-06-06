@@ -50,13 +50,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-  core_module:
-    dependency: "direct main"
-    description:
-      path: "modules/core_module"
-      relative: true
-    source: path
-    version: "0.0.1"
   crypto:
     dependency: transitive
     description:
@@ -64,15 +57,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.3"
   dio:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: dio
       url: "https://pub.dartlang.org"
@@ -83,13 +69,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_modular:
-    dependency: "direct main"
-    description:
-      name: flutter_modular
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.2.5+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -100,13 +79,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  home_module:
-    dependency: "direct main"
-    description:
-      path: "modules/home_module"
-      relative: true
-    source: path
-    version: "0.0.1"
   http_parser:
     dependency: transitive
     description:
@@ -121,13 +93,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.12"
-  login_module:
-    dependency: "direct main"
-    description:
-      path: "modules/login_module"
-      relative: true
-    source: path
-    version: "0.0.1"
   matcher:
     dependency: transitive
     description:
@@ -142,13 +107,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.8"
-  mockito:
-    dependency: "direct dev"
-    description:
-      name: mockito
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.1.1"
   path:
     dependency: transitive
     description:
@@ -171,7 +129,7 @@ packages:
     source: hosted
     version: "2.1.3"
   shared_preferences:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: shared_preferences
       url: "https://pub.dartlang.org"

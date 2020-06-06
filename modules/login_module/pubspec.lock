@@ -53,7 +53,7 @@ packages:
   core_module:
     dependency: "direct main"
     description:
-      path: "modules/core_module"
+      path: "../core_module"
       relative: true
     source: path
     version: "0.0.1"
@@ -64,13 +64,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.3"
   dio:
     dependency: transitive
     description:
@@ -100,13 +93,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  home_module:
-    dependency: "direct main"
-    description:
-      path: "modules/home_module"
-      relative: true
-    source: path
-    version: "0.0.1"
   http_parser:
     dependency: transitive
     description:
@@ -121,13 +107,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.12"
-  login_module:
-    dependency: "direct main"
-    description:
-      path: "modules/login_module"
-      relative: true
-    source: path
-    version: "0.0.1"
   matcher:
     dependency: transitive
     description:
@@ -142,13 +121,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.8"
-  mockito:
-    dependency: "direct dev"
-    description:
-      name: mockito
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.1.1"
   path:
     dependency: transitive
     description:
